@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function start() {
-    nohup hugo server --theme=herring-cove  --verboseLog=true  --logFile=TimeCapsule/log/timecapsule.log  --baseUrl=http://chenmeilin.com -w -p 80 -s TimeCapsule &
+    nohup hugo server --theme=herring-cove  --verboseLog=true  --logFile=TimeCapsule/log/timecapsule.log  --baseUrl=http://chenmeilin.com -w -p 80 &
 }
 
 function stop() {
