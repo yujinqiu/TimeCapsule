@@ -16,8 +16,14 @@ function restart() {
 case C"$1" in
     Cstart)
         start
+        ;;
     Cstop)
         stop
+        ;;
     Crestart)
         restart
+        ;;
+    C*)
+        echo "Usage: $0 {start|stop|restart}"
+        ;;
 esac
